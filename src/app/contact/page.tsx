@@ -34,11 +34,16 @@ export default function ContactPage() {
 
         const form = e.currentTarget;
         const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
 
         try {
             await fetch("https://script.google.com/macros/s/AKfycbzyFiMW3jnXSwJqY8RJG3DyFQaW05WLG1QWnls40g1F9U-TA8a9WIQ0J1WFYiX4uqA6/exec", {
                 method: "POST",
-                body: formData,
+                body: JSON.stringify(data),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                mode: "no-cors",
             });
 
             toast({
