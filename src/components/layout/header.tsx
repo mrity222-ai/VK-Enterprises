@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -8,7 +7,7 @@ import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { VKEcoFlowLogo } from '../icons';
+import Image from 'next/image';
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -79,7 +78,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
-          <VKEcoFlowLogo className="h-8 w-8" />
+          <Image src="/logo.png" alt="VK Enterprises Logo" width={40} height={40} priority />
           <span className={cn(
             "font-headline text-xl font-bold text-foreground"
             )}>
@@ -116,7 +115,7 @@ export function Header() {
                   className="mb-8 flex items-center gap-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <VKEcoFlowLogo className="h-8 w-8" />
+                  <Image src="/logo.png" alt="VK Enterprises Logo" width={40} height={40} />
                   <span className="font-headline text-lg font-bold">
                     VK Enterprises
                   </span>
