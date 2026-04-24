@@ -35,20 +35,10 @@ export default function ContactPage() {
         const form = e.currentTarget;
         const formData = new FormData(form);
 
-        const data = {
-            name: formData.get('name'),
-            mobile: formData.get('mobile'),
-            subject: formData.get('subject'),
-            message: formData.get('message'),
-        };
-
         try {
             await fetch("https://script.google.com/macros/s/AKfycbzyFiMW3jnXSwJqY8RJG3DyFQaW05WLG1QWnls40g1F9U-TA8a9WIQ0J1WFYiX4uqA6/exec", {
                 method: "POST",
-                body: JSON.stringify(data),
-                headers: {
-                    "Content-Type": "application/json"
-                },
+                body: formData,
             });
 
             toast({
