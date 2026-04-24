@@ -184,6 +184,6 @@ export const TESTIMONIALS = [
 ];
 
 export const TEAM = [
-    { name: "Vinay Kumar Agrawal", role: "Director", image: "team-vinay", description: "With over 15+ years of experience in engineering and project management, he leads the company with innovation and strategic vision." },
-    { name: "Akhilesh Dwivedi", role: "Project Director", image: "team-akhilesh", description: "Expert in execution and operations, ensuring every project is delivered with precision, quality, and efficiency." },
+    { name: "Vinay Kumar Agrawal", role: "Director", image: "team-vinay", description: "Vinay Kumar Agrawal, Director of VK Enterprises, has built an inspiring legacy over the past 25+ years. Starting from a small venture dealing in aluminum foil and containers, he transformed his journey into a successful business empire through dedication, consistency, and strong business ethics. Under his leadership, VK Enterprises has emerged as a trusted name in delivering high-quality solutions across multiple industries. His vision focuses on innovation, customer satisfaction, and long-term growth, making the company a reliable partner for clients across India." },
+    { name: "Akhilesh Dwivedi", role: "Project Director", image: "team-akhilesh", description: "Akhilesh Dwivedi, Project Director at VK Enterprises, is a visionary expert in designing world-class water fountains and aquatic landscapes. With an MBA degree and 19+ years of experience, he combines technical expertise with creative excellence. He has successfully delivered numerous landmark projects across India, making VK Enterprises a leading brand in fountain design and execution. His focus on innovation, precision, and aesthetics ensures every project stands out with both beauty and functionality." },
 ];
