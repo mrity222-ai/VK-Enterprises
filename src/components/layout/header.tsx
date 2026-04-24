@@ -82,7 +82,7 @@ export function Header() {
           <span className={cn(
             "font-headline text-xl font-bold text-foreground"
             )}>
-            VK Enterprises
+            VK ENTERPRISES
           </span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
@@ -117,7 +117,7 @@ export function Header() {
                 >
                   <Image src="/team/logo.png" alt="VK Enterprises Logo" width={50} height={50} />
                   <span className="font-headline text-lg font-bold">
-                    VK Enterprises
+                    VK ENTERPRISES
                   </span>
                 </Link>
                 <nav className="flex flex-col gap-6">
