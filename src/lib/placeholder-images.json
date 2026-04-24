@@ -1,0 +1,226 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-solar-fountain",
+      "description": "A futuristic depiction of integrated solar panels and water features, symbolizing clean energy and elegant design.",
+      "imageUrl": "/ser/5.png",
+      "imageHint": "solar fountain"
+    },
+    {
+      "id": "hero-wind-turbines",
+      "description": "Wide landscape showing wind turbines in a field with a dark gradient sky",
+      "imageUrl": "/ser/5.png",
+      "imageHint": "wind turbines field"
+    },
+    {
+      "id": "card-solar-install",
+      "description": "Workers installing solar panels on a roof",
+      "imageUrl": "/ser/4.png",
+      "imageHint": "solar installation"
+    },
+    {
+      "id": "hero-cloudy-sky",
+      "description": "Soft white clouds in a bright sky",
+      "imageUrl": "/ser/5.png",
+      "imageHint": "cloudy sky"
+    },
+    {
+      "id": "hero-background",
+      "description": "Modern building with solar panels under a clear blue sky",
+      "imageUrl": "/ser/5.png",
+      "imageHint": "solar panels building"
+    },
+    {
+      "id": "service-solar",
+      "description": "Close-up of solar panels on a residential roof",
+      "imageUrl": "/ser/1.png",
+      "imageHint": "solar panels"
+    },
+    {
+      "id": "service-fountain",
+      "description": "Elaborate water fountain in a public square at dusk",
+      "imageUrl": "/ser/2.png",
+      "imageHint": "water fountain"
+    },
+    {
+      "id": "service-turnkey",
+      "description": "Large-scale industrial complex with solar arrays",
+      "imageUrl": "/ser/3.png",
+      "imageHint": "industrial solar"
+    },
+    {
+      "id": "why-choose-us",
+      "description": "A person smiling and looking at a diagram of a sustainable city",
+      "imageUrl": "https://picsum.photos/seed/105/800/600",
+      "imageHint": "sustainable city"
+    },
+    {
+      "id": "testimonial-author-1",
+      "description": "Professional headshot of a smiling man",
+      "imageUrl": "https://picsum.photos/seed/120/100/100",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-author-2",
+      "description": "Professional headshot of a smiling woman",
+      "imageUrl": "https://picsum.photos/seed/121/100/100",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-author-3",
+      "description": "Candid shot of a person in a business setting",
+      "imageUrl": "https://picsum.photos/seed/122/100/100",
+      "imageHint": "person business"
+    },
+    {
+      "id": "testimonial-author-4",
+      "description": "Portrait of a happy farmer",
+      "imageUrl": "https://picsum.photos/seed/123/100/100",
+      "imageHint": "farmer portrait"
+    },
+    {
+      "id": "testimonial-author-5",
+      "description": "Portrait of a female architect",
+      "imageUrl": "https://picsum.photos/seed/124/100/100",
+      "imageHint": "architect portrait"
+    },
+    {
+      "id": "testimonial-author-6",
+      "description": "Portrait of a shop owner",
+      "imageUrl": "https://picsum.photos/seed/125/100/100",
+      "imageHint": "shop owner"
+    },
+    {
+      "id": "testimonial-author-7",
+      "description": "Portrait of a professional woman",
+      "imageUrl": "https://picsum.photos/seed/126/100/100",
+      "imageHint": "woman professional"
+    },
+    {
+      "id": "testimonial-author-8",
+      "description": "Portrait of a contractor",
+      "imageUrl": "https://picsum.photos/seed/127/100/100",
+      "imageHint": "contractor portrait"
+    },
+    {
+      "id": "testimonial-author-9",
+      "description": "Portrait of a businessman",
+      "imageUrl": "https://picsum.photos/seed/128/100/100",
+      "imageHint": "businessman portrait"
+    },
+    {
+      "id": "about-us-main",
+      "description": "A diverse team of engineers collaborating in a modern office",
+      "imageUrl": "/pro/5.png",
+      "imageHint": "engineering team"
+    },
+    {
+      "id": "team-vinay",
+      "description": "Portrait of Vinay Kumar Agrawal, Director",
+      "imageUrl": "/team/2.png",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "team-akhilesh",
+      "description": "Portrait of Akhilesh Dwivedi, Project Director",
+      "imageUrl": "/team/1.png",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "project-solar-1",
+      "description": "Rooftop solar installation on a modern home",
+      "imageUrl": "https://picsum.photos/seed/114/600/400",
+      "imageHint": "rooftop solar"
+    },
+    {
+      "id": "project-solar-2",
+      "description": "Commercial building with a large array of solar panels",
+      "imageUrl": "https://picsum.photos/seed/115/600/400",
+      "imageHint": "commercial solar"
+    },
+    {
+      "id": "project-fountain-1",
+      "description": "Artistic water fountain in a corporate park",
+      "imageUrl": "/pro/1.jpg",
+      "imageHint": "corporate fountain"
+    },
+    {
+      "id": "project-fountain-2",
+      "description": "Interactive water feature in a children's play area",
+      "imageUrl": "/pro/1.jpg",
+      "imageHint": "interactive fountain"
+    },
+    {
+      "id": "project-turnkey-1",
+      "description": "Government building with integrated solar power system",
+      "imageUrl": "https://picsum.photos/seed/118/600/400",
+      "imageHint": "government solar"
+    },
+    {
+      "id": "project-turnkey-2",
+      "description": "Large-scale solar farm in a rural area",
+      "imageUrl": "https://picsum.photos/seed/119/600/400",
+      "imageHint": "solar farm"
+    },
+    {
+      "id": "solutions-background",
+      "description": "A scenic view of wind turbines on rolling hills during sunset.",
+      "imageUrl": "/ser/5.png",
+      "imageHint": "wind turbines sunset"
+    },
+    {
+      "id": "impact-solar-panels",
+      "description": "Diagonal array of solar panels with warm sunlight filtering through",
+      "imageUrl": "https://picsum.photos/seed/203/800/1200",
+      "imageHint": "solar panels array"
+    },
+    {
+      "id": "project-solar-generic",
+      "description": "Array of modern solar panels on a commercial roof",
+      "imageUrl": "/pro/1.jpg",
+      "imageHint": "solar panels"
+    },
+    {
+      "id": "project-fountain-noida-18",
+      "description": "A modern water fountain in a bustling city sector at dusk.",
+      "imageUrl": "/pro/2.jpg",
+      "imageHint": "city fountain"
+    },
+    {
+      "id": "project-turnkey-hospital",
+      "description": "Exterior of a modern, clean field hospital building.",
+      "imageUrl": "/pro/3.jpg",
+      "imageHint": "field hospital"
+    },
+    {
+      "id": "project-fountain-kuleshra",
+      "description": "An elegant fountain at the entry point of a modern city.",
+      "imageUrl": "https://picsum.photos/seed/304/600/400",
+      "imageHint": "entrance fountain"
+    },
+    {
+      "id": "project-fountain-parthla",
+      "description": "A large, impressive fountain at a major city intersection.",
+      "imageUrl": "https://picsum.photos/seed/305/600/400",
+      "imageHint": "chowk fountain"
+    },
+    {
+      "id": "project-fountain-gnida",
+      "description": "A grand water feature in front of an authority building.",
+      "imageUrl": "https://picsum.photos/seed/306/600/400",
+      "imageHint": "authority fountain"
+    },
+    {
+      "id": "project-fountain-sashi-chowk",
+      "description": "A fountain near a metro station, blending with urban infrastructure.",
+      "imageUrl": "https://picsum.photos/seed/307/600/400",
+      "imageHint": "metro fountain"
+    },
+    {
+      "id": "certificate-appreciation",
+      "description": "Appreciation letter document",
+      "imageUrl": "/pro/4.jpg",
+      "imageHint": "appreciation letter"
+    }
+  ]
+}
