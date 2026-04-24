@@ -78,7 +78,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/team/logo.png" alt="VK Enterprises Logo" width={40} height={40} priority />
+          <Image src="/team/logo.png" alt="VK Enterprises Logo" width={50} height={50} priority />
           <span className={cn(
             "font-headline text-xl font-bold text-foreground"
             )}>
@@ -115,7 +115,7 @@ export function Header() {
                   className="mb-8 flex items-center gap-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <Image src="/team/logo.png" alt="VK Enterprises Logo" width={40} height={40} />
+                  <Image src="/team/logo.png" alt="VK Enterprises Logo" width={50} height={50} />
                   <span className="font-headline text-lg font-bold">
                     VK Enterprises
                   </span>
