@@ -10,12 +10,49 @@ import { GetQuoteModal } from '@/components/get-quote-modal';
 
 export const metadata: Metadata = {
   title: {
-    default: 'VK Enterprises | Clean Energy Solutions',
+    default: 'VK Enterprises | Solar & Water Fountain Company in UP, India',
     template: '%s | VK Enterprises',
   },
   description:
-    'Reliable, affordable, and sustainable solar solutions for homes and businesses.',
+    'VK Enterprises is a leading solar panel installation and water fountain design company in Uttar Pradesh, India. We offer turnkey solutions for residential, commercial, and government projects. Get a free quote!',
 };
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  'name': 'VK Enterprises',
+  'image': 'https://www.vkenterprisess.com/team/logo.png',
+  '@id': 'https://www.vkenterprisess.com/',
+  'url': 'https://www.vkenterprisess.com/',
+  'telephone': '+919415212271',
+  'address': {
+    '@type': 'PostalAddress',
+    'streetAddress': 'Shope No. 4 Pushpanjali Complex, Shahi Market, Golghar',
+    'addressLocality': 'Gorakhpur',
+    'postalCode': '273001',
+    'addressRegion': 'UP',
+    'addressCountry': 'IN'
+  },
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 26.7634351,
+    'longitude': 83.29031734335937
+  },
+  'openingHoursSpecification': {
+    '@type': 'OpeningHoursSpecification',
+    'dayOfWeek': [
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday'
+    ],
+    'opens': '09:00',
+    'closes': '18:00'
+  },
+};
+
 
 export default function RootLayout({
   children,
@@ -25,6 +62,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="light scroll-smooth">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

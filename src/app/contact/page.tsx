@@ -3,6 +3,7 @@
 import { useFormStatus } from 'react-dom';
 import { useActionState, useEffect } from 'react';
 import Image from 'next/image';
+import { Metadata } from 'next';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -23,10 +24,11 @@ import { submitContact } from '@/lib/actions';
 import { useToast } from '@/hooks/use-toast';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
-
+// This is a client component, so we can't export metadata directly.
+// We can set it in the parent layout or using a custom hook if needed.
 // export const metadata: Metadata = {
-//   title: 'Contact Us',
-//   description: 'Get in touch with VK Enterprises for a free quote or any inquiries. Find our address, phone number, and working hours.',
+//   title: 'Contact VK Enterprises | Free Solar or Fountain Quote in UP',
+//   description: 'Get in touch with VK Enterprises for a free quote on solar panel installation or water fountain design in Uttar Pradesh. Contact our experts in Gorakhpur today.',
 // };
 
 function SubmitButton() {
@@ -80,10 +82,10 @@ export default function ContactPage() {
             <div className="container relative mx-auto px-4">
                 <header className="text-center">
                     <h1 className="font-headline text-4xl font-bold tracking-tighter text-foreground sm:text-5xl">
-                        Get in Touch
+                        Contact Us for a Free Quote
                     </h1>
                     <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-                        We&apos;re here to help. Contact us for a free consultation or with any questions you may have.
+                        We're here to help you start your green energy journey. Contact the experts at VK Enterprises for a free consultation on solar or water fountain projects anywhere in Uttar Pradesh.
                     </p>
                 </header>
             </div>
@@ -100,7 +102,7 @@ export default function ContactPage() {
                         <MapPin className="h-6 w-6 flex-shrink-0 text-primary" />
                         <div>
                           <h3 className="font-semibold text-foreground">Address</h3>
-                          <p>Shope No. 4 Pushpanjali Complex, Shahi Market, Golghar Gorakhpur.</p>
+                          <p>Shope No. 4 Pushpanjali Complex, Shahi Market, Golghar Gorakhpur, Uttar Pradesh, India.</p>
                         </div>
                       </li>
                       <li className="flex items-start gap-4">
@@ -151,7 +153,7 @@ export default function ContactPage() {
               </div>
 
               <div className="space-y-8">
-                <h2 className="font-headline text-2xl font-bold">Send Us a Message</h2>
+                <h2 className="font-headline text-2xl font-bold">Send Us a Message for a Free Quote</h2>
                 <Card className="transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50">
                   <CardContent className="p-6">
                     <form action={dispatch} className="space-y-4">
@@ -169,7 +171,7 @@ export default function ContactPage() {
                       </div>
                       <div className="space-y-2">
                           <Label htmlFor="subject">Subject</Label>
-                          <Input id="subject" name="subject" placeholder="e.g., Solar Panel Inquiry" required />
+                          <Input id="subject" name="subject" placeholder="e.g., Solar Panel Installation in Lucknow" required />
                           {state.errors?.subject && <p className="text-sm text-destructive">{state.errors.subject[0]}</p>}
                         </div>
                       <div className="space-y-2">
@@ -186,7 +188,7 @@ export default function ContactPage() {
 
             <div className="mt-12">
                 <h2 className="text-center font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
-                  Find Us Here
+                  Find Our Office in Gorakhpur, UP
                 </h2>
                 <div className="mt-8 overflow-hidden rounded-xl">
                    <iframe
@@ -197,7 +199,7 @@ export default function ContactPage() {
                     allowFullScreen={true}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Google Map of Gorakhpur"
+                    title="Google Map of VK Enterprises office in Gorakhpur, Uttar Pradesh"
                   ></iframe>
                 </div>
             </div>

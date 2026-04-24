@@ -12,14 +12,21 @@ import { MapPin, Users, Building, Zap, CirclePlay } from 'lucide-react';
 import { CtaSection } from '@/components/cta-section';
 import { OpenQuoteModalButton } from '@/components/get-quote-modal';
 import { Badge } from '@/components/ui/badge';
+import { Metadata } from 'next';
 
 type Filter = 'all' | 'solar' | 'fountain' | 'turnkey';
 
+// Client component, so no metadata export
+// export const metadata: Metadata = {
+//   title: 'Our Projects | Solar & Fountain Portfolio in Uttar Pradesh',
+//   description: 'Explore the portfolio of VK Enterprises, a leading solar and water fountain company in Uttar Pradesh. See our completed projects in Noida, Lucknow, Gorakhpur, and more.',
+// };
+
 const filters: { label: string; value: Filter }[] = [
   { label: 'All Projects', value: 'all' },
-  { label: 'Solar', value: 'solar' },
+  { label: 'Solar Installation', value: 'solar' },
   { label: 'Water Fountain', value: 'fountain' },
-  { label: 'Turnkey', value: 'turnkey' },
+  { label: 'Turnkey Projects', value: 'turnkey' },
 ];
 
 export default function ProjectsPage() {
@@ -39,8 +46,8 @@ export default function ProjectsPage() {
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const categoryDisplay = {
-    solar: 'Solar',
-    fountain: 'Water Fountain',
+    solar: 'Solar Panel Installation',
+    fountain: 'Water Fountain Design',
     turnkey: 'Turnkey Project',
   };
 
@@ -97,17 +104,17 @@ export default function ProjectsPage() {
         <div className="container relative mx-auto px-4 text-center">
             <div className="mb-4">
               <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-primary">
-                Showcasing Excellence • Innovation • Sustainability
+                Showcasing Excellence in Uttar Pradesh
               </span>
             </div>
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl lg:text-6xl">
-            Our Portfolio
+            Our Project Portfolio: Solar & Water Solutions in UP
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground">
-            Turning Ideas into Sustainable Reality
+            Turning Ideas into Sustainable Reality Across Uttar Pradesh
           </p>
           <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground">
-            Explore our diverse range of solar, water fountain, and large-scale projects that reflect our commitment to quality, innovation, and environmental responsibility.
+            Explore our diverse range of solar, water fountain, and large-scale turnkey projects in UP. Our work reflects our commitment to quality, innovation, and customer satisfaction in every installation.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Button size="lg" asChild>
@@ -115,19 +122,19 @@ export default function ProjectsPage() {
             </Button>
             <OpenQuoteModalButton>
               <Button size="lg" variant="outline">
-                Get Free Consultation
+                Get a Free Project Quote
               </Button>
             </OpenQuoteModalButton>
           </div>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-2">
-              <Badge variant="outline" className="border-primary/50 bg-primary/10 text-primary">Solar Projects</Badge>
-              <Badge variant="outline" className="border-primary/50 bg-primary/10 text-primary">Fountain Designs</Badge>
-              <Badge variant="outline" className="border-primary/50 bg-primary/10 text-primary">Turnkey Projects</Badge>
+              <Badge variant="outline" className="border-primary/50 bg-primary/10 text-primary">Solar Projects in UP</Badge>
+              <Badge variant="outline" className="border-primary/50 bg-primary/10 text-primary">Fountain Designs India</Badge>
+              <Badge variant="outline" className="border-primary/50 bg-primary/10 text-primary">Turnkey Government Projects</Badge>
           </div>
           <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                   <Users className="h-4 w-4 text-accent" />
-                  <span>50+ Clients</span>
+                  <span>50+ Clients in Uttar Pradesh</span>
               </div>
               <div className="flex items-center gap-2">
                   <Building className="h-4 w-4 text-accent" />
@@ -135,7 +142,7 @@ export default function ProjectsPage() {
               </div>
               <div className="flex items-center gap-2">
                   <Zap className="h-4 w-4 text-accent" />
-                  <span>15+ Years Experience</span>
+                  <span>15+ Years Experience in India</span>
               </div>
           </div>
         </div>
@@ -210,7 +217,7 @@ export default function ProjectsPage() {
 
                     <div className="absolute inset-0 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         <Button variant="secondary">
-                          {project.id === 'p2' ? (
+                          {project.video ? (
                               <>
                                   <CirclePlay className="mr-2" />
                                   <span>View Video</span>

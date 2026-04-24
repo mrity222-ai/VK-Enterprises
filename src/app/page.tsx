@@ -47,31 +47,31 @@ export default function Home() {
   const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-us-main');
 
   const impactStats = [
-    { value: 70, suffix: '%', label: 'Saving Energy Cost' },
-    { value: 100, suffix: '%', label: 'Renewable Energy' },
-    { value: 23, suffix: 'M+', label: 'Worth Energy Cost' },
-    { value: 26, suffix: '+', label: 'Projects Completed' },
+    { value: 70, suffix: '%', label: 'Energy Cost Savings' },
+    { value: 100, suffix: '%', label: '100% Green Energy' },
+    { value: 23, suffix: 'M+', label: 'Project Value Delivered' },
+    { value: 26, suffix: '+', label: 'Projects Completed Successfully' },
   ];
 
   const servicesData = [
     {
       id: 'water-fountain',
       title: 'Water Fountain',
-      description: 'Custom-designed fountains for gardens, parks, hotels, and commercial spaces.',
+      description: 'India\'s trusted water fountain design company. We create stunning, custom water features for parks, hotels, and luxury homes across Lucknow, Noida, and beyond.',
       icon: Droplets,
       highlight: false,
     },
     {
       id: 'solar-panels',
-      title: 'Solar Panels',
-      description: 'Installation, maintenance, and repair of solar panels for homes and businesses.',
+      title: 'Solar Panel Installation UP',
+      description: 'Expert solar panel installation in Uttar Pradesh for homes and businesses. As a leading solar company in UP, we ensure top-tier panels & long-term savings.',
       icon: Sun,
       highlight: true,
     },
     {
       id: 'turnkey-project',
       title: 'Turnkey Project',
-      description: 'We specialize in commercial projects and also collaborate with government sectors.',
+      description: 'Your reliable turnkey project contractor in India for large-scale government and commercial projects, from planning to execution.',
       icon: Building,
       highlight: false,
     },
@@ -96,21 +96,21 @@ export default function Home() {
           <div className="text-center md:text-left">
             
             <h1 className="font-headline text-5xl font-bold tracking-tight text-foreground sm:text-6xl md:text-7xl">
-              Powering the Future with <span className="text-gradient">Clean Energy</span>
+              Top <span className="text-gradient">Solar & Water Fountain</span> Company in Uttar Pradesh
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground mx-auto md:mx-0">
-              Smart, sustainable, and cost-effective energy solutions for homes and businesses.
+              VK Enterprises offers expert solar panel installation and custom water fountain design across UP, including Lucknow, Noida, and Gorakhpur. Power your future with sustainable solutions.
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 md:justify-start">
               <Button size="lg" asChild className="bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold">
                 <Link href="/contact">
-                  Get Started <ArrowRight className="ml-2" />
+                  Get a Free Quote <ArrowRight className="ml-2" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link href="#">
-                  <CirclePlay className="mr-2" /> Watch Demo
+                <Link href="#our-works">
+                  <CirclePlay className="mr-2" /> View Our Work
                 </Link>
               </Button>
             </div>
@@ -121,7 +121,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2 text-sm font-medium text-foreground">
                 <Award className="h-5 w-5 text-accent" />
-                <span>Govt Approved Projects</span>
+                <span>Govt Approved Contractor</span>
               </div>
               <div className="flex items-center gap-2 text-sm font-medium text-foreground">
                 <Zap className="h-5 w-5 text-accent" />
@@ -144,9 +144,9 @@ export default function Home() {
                   />
                 )}
               </div>
-              <p className="mt-4 text-center text-sm text-foreground/80">Innovative energy solutions for a better tomorrow.</p>
+              <p className="mt-4 text-center text-sm text-foreground/80">Innovative energy solutions for a greener tomorrow in India.</p>
               <Button asChild variant="secondary" className="mt-4 w-full">
-                <Link href="/projects">View Projects</Link>
+                <Link href="/projects">View All Projects</Link>
               </Button>
             </div>
           </div>
@@ -157,7 +157,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <div className="mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-              Trusted by thousands, proven by numbers
+              Trusted by Businesses Across Uttar Pradesh, Proven by Numbers
             </h2>
           </div>
           <AnimatedStats stats={impactStats} className="grid-cols-1 sm:grid-cols-2 md:grid-cols-4 max-w-5xl mx-auto" />
@@ -168,10 +168,10 @@ export default function Home() {
         <div className="container relative mx-auto px-4">
             <div className="mb-12 text-center">
                 <h2 className="font-headline text-3xl font-bold tracking-tighter text-foreground sm:text-4xl">
-                    Our Core Services
+                    Our Core Services for Uttar Pradesh & India
                 </h2>
                 <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-                    Discover our main areas of expertise, delivering excellence and innovation.
+                    Discover our main areas of expertise, delivering excellence in solar, water fountain, and turnkey solutions across India.
                 </p>
             </div>
 
@@ -271,10 +271,10 @@ export default function Home() {
             </div>
             <div>
               <h2 className="font-headline text-3xl font-bold tracking-tighter text-foreground sm:text-4xl">
-                Pioneering a Sustainable Future
+                Pioneering a Sustainable Future in Uttar Pradesh
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                For over 15 years, VK Enterprises has been at the forefront of the green energy revolution, delivering cutting-edge solar and water solutions. Our mission is to provide sustainable and innovative solutions that empower our clients and protect our planet.
+                For over 15 years, VK Enterprises has been at the forefront of the green energy revolution in India, delivering cutting-edge solar and water solutions. As a leading solar company in UP, our mission is to provide sustainable and innovative services that empower our clients and protect our planet.
               </p>
               <ul className="mt-6 space-y-4">
                 <li className="flex items-start gap-4">
@@ -283,7 +283,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Our Mission</h3>
-                    <p className="text-sm text-muted-foreground">To empower communities with sustainable and innovative energy solutions.</p>
+                    <p className="text-sm text-muted-foreground">To empower Indian communities with sustainable and innovative energy solutions.</p>
                   </div>
                 </li>
                  <li className="flex items-start gap-4">
@@ -292,7 +292,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold">15+ Years of Experience</h3>
-                    <p className="text-sm text-muted-foreground">A proven track record of quality, integrity, and customer satisfaction.</p>
+                    <p className="text-sm text-muted-foreground">A proven track record of quality, integrity, and customer satisfaction across Uttar Pradesh.</p>
                   </div>
                 </li>
               </ul>
@@ -310,10 +310,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="font-headline text-3xl font-bold tracking-tighter text-foreground sm:text-4xl">
-              Our Recent Works
+              Our Recent Projects in Uttar Pradesh
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-              A glimpse into our portfolio of successful projects across different sectors.
+              A glimpse into our portfolio of successful solar, fountain, and turnkey projects across different sectors in UP.
             </p>
             <div className="mt-8 flex justify-center">
               <Button asChild>
@@ -330,8 +330,8 @@ export default function Home() {
                 (img) => img.id === project.image
               );
               const categoryDisplay = {
-                  solar: 'Solar',
-                  fountain: 'Water Fountain',
+                  solar: 'Solar Panel Installation',
+                  fountain: 'Water Fountain Design',
                   turnkey: 'Turnkey Project',
               };
               const categoryText = categoryDisplay[project.category as keyof typeof categoryDisplay] || project.category;
@@ -382,12 +382,12 @@ export default function Home() {
           <div className="mb-12 grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
             <div>
               <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
-                Why Choose Residential Solar Panels?
+                Why Choose Solar Panels in Uttar Pradesh?
               </h2>
             </div>
             <div>
               <p className="text-lg text-muted-foreground">
-                There are many significant benefits to installing residential solar panels on your homes roof. With minimal maintenance and long-term reliability, residential solar is an excellent choice for those seeking both financial and ecological benefits.
+                Installing residential solar panels on your home's roof in UP offers significant financial and ecological benefits. With government incentives and long-term reliability, residential solar is an excellent choice for homeowners in Lucknow, Kanpur, and across the state.
               </p>
             </div>
           </div>
@@ -396,39 +396,39 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
             <div>
-              <h3 className="mb-2 text-xl font-bold">Cost Saving</h3>
+              <h3 className="mb-2 text-xl font-bold">Major Cost Savings</h3>
               <p className="text-muted-foreground">
-                Solar energy can significantly reduce electricity bills over time, offering long-term savings on utility costs.
+                Solar energy can significantly reduce your electricity bills over time, offering long-term savings on ever-increasing utility costs in Uttar Pradesh.
               </p>
             </div>
             <div>
               <h3 className="mb-2 text-xl font-bold">Environmental Benefits</h3>
               <p className="text-muted-foreground">
-                Solar power is a clean, renewable energy source that reduces carbon footprint and helps combat climate change.
+                As a clean, renewable energy source, solar power reduces your carbon footprint and helps combat climate change in India.
               </p>
             </div>
             <div>
               <h3 className="mb-2 text-xl font-bold">Energy Independence</h3>
               <p className="text-muted-foreground">
-                Solar panels provide homeowners with more control over their energy usage, reducing reliance on traditional energy sources.
+                Generate your own power and reduce your reliance on the grid. Solar provides energy security for your home or business.
               </p>
             </div>
             <div>
               <h3 className="mb-2 text-xl font-bold">Increased Home Value</h3>
               <p className="text-muted-foreground">
-                Homes with solar panels typically sell at a premium and are more attractive to eco-conscious buyers.
+                Homes in Uttar Pradesh with solar panels typically sell at a premium and are more attractive to eco-conscious buyers.
               </p>
             </div>
             <div>
-              <h3 className="mb-2 text-xl font-bold">Government Incentives</h3>
+              <h3 className="mb-2 text-xl font-bold">UP Government Incentives</h3>
               <p className="text-muted-foreground">
-                Many governments offer incentives, rebates, and tax credits for installing solar panels, making it more affordable.
+                The government offers incentives, rebates, and tax credits for installing solar panels, making it more affordable than ever for UP residents.
               </p>
             </div>
             <div>
               <h3 className="mb-2 text-xl font-bold">Long-Term Reliability</h3>
               <p className="text-muted-foreground">
-                Solar panels have minimal maintenance requirements and often come with warranties lasting 25 years.
+                Modern solar panel systems require minimal maintenance and often come with performance warranties lasting up to 25 years.
               </p>
             </div>
           </div>
@@ -440,12 +440,12 @@ export default function Home() {
             <div className="mb-12 grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
                 <div>
                     <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
-                        Eco Technology Integration
+                        Eco Technology Integration by VK Enterprises
                     </h2>
                 </div>
                 <div>
                     <p className="text-lg text-muted-foreground">
-                        We integrate smart solar solutions with eco-friendly technology to boost efficiency, cut costs, and protect the environment.
+                        As a leading solar company in UP, we integrate smart solar solutions with eco-friendly technology to boost efficiency, cut costs, and protect the environment.
                     </p>
                 </div>
             </div>
@@ -461,7 +461,7 @@ export default function Home() {
                         <p className="font-headline text-6xl font-bold tracking-tighter text-chart-1">390MW+</p>
                         <h4 className="mt-4 text-xl font-bold">Clean Energy Generated</h4>
                         <p className="mt-2 max-w-xs text-muted-foreground">
-                            Produced massive amounts of renewable energy to power thousands of homes and businesses.
+                            We've produced massive amounts of renewable energy to power thousands of homes and businesses across India.
                         </p>
                     </div>
 
@@ -469,9 +469,9 @@ export default function Home() {
 
                     <div className="flex flex-col items-center text-center md:pl-6">
                         <p className="font-headline text-6xl font-bold tracking-tighter text-chart-1">1,050+</p>
-                        <h4 className="mt-4 text-xl font-bold">Businesses Empowered</h4>
+                        <h4 className="mt-4 text-xl font-bold">Businesses Empowered in UP</h4>
                         <p className="mt-2 max-w-xs text-muted-foreground">
-                            Supported companies in reducing costs and achieving sustainability goals through solar power.
+                            We've helped companies in Uttar Pradesh reduce costs and achieve sustainability goals through solar power.
                         </p>
                     </div>
                 </div>
@@ -491,10 +491,10 @@ export default function Home() {
             <div className="mb-12 flex flex-col items-start text-left md:flex-row md:items-end md:justify-between">
                 <div>
                     <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
-                        What Our Happy Customers Say
+                        What Our Happy Customers in Uttar Pradesh Say
                     </h2>
                     <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                        Hear what our satisfied clients have to say about their experience with VK Enterprises.
+                        Hear what our satisfied clients have to say about their experience with VK Enterprises, a leading solar company in UP.
                     </p>
                 </div>
                 <div className="mt-4 flex gap-2 md:mt-0">

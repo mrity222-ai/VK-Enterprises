@@ -32,45 +32,45 @@ import {
 import { CtaSection } from '@/components/cta-section';
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'About VK Enterprises | Leading Solar & Fountain Company in UP',
   description:
-    'With over 15 years of experience, VK Enterprises is a leader in delivering sustainable solar energy and elegant water fountain solutions.',
+    'With 15+ years of experience, VK Enterprises is a trusted solar and water fountain company in Uttar Pradesh, serving Noida, Lucknow & more. Learn about our mission and expert team.',
 };
 
 const aboutServices = [
   {
     title: 'Solar Power Systems',
-    description: 'Customized solar solutions for residential and commercial needs.',
+    description: 'Customized solar solutions for residential and commercial needs in Uttar Pradesh.',
     icon: Sun,
   },
   {
     title: 'Water Fountain Solutions',
-    description: 'Designing and installing elegant water features for any space.',
+    description: 'Designing and installing elegant water features for any space across India.',
     icon: Droplets,
   },
   {
-    title: 'Construction Work (Govt Projects)',
-    description: 'Handling large-scale government contracts with precision.',
+    title: 'Government Turnkey Projects',
+    description: 'Handling large-scale government contracts with precision and expertise in India.',
     icon: Building,
   },
   {
     title: 'Energy Efficiency Consultation',
-    description: 'Advising on the best ways to reduce energy consumption.',
+    description: 'Advising on the best ways to reduce energy consumption for UP businesses.',
     icon: Lightbulb,
   },
   {
     title: 'Eco-Friendly Designs',
-    description: 'Integrating sustainability into every aspect of our projects.',
+    description: 'Integrating sustainability into every solar and water fountain project we undertake.',
     icon: Leaf,
   },
 ];
 
 const companyHighlights = [
-    { text: '15+ Years of Industry Experience' },
-    { text: '50+ Happy Customers' },
-    { text: 'Government Project Expertise' },
-    { text: 'Skilled Engineering Team' },
-    { text: 'Focus on Sustainability & Innovation' },
+    { text: '15+ Years of Industry Experience in India' },
+    { text: '50+ Happy Customers Across Uttar Pradesh' },
+    { text: 'Expertise in Government Solar & Turnkey Projects' },
+    { text: 'Skilled Engineering Team for Quality Installation' },
+    { text: 'Focus on Sustainability & Innovative Solutions' },
 ];
 
 export default function AboutPage() {
@@ -78,11 +78,11 @@ export default function AboutPage() {
   const heroBgImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
   const impactImage = PlaceHolderImages.find((img) => img.id === 'impact-solar-panels');
   const achievements = [
-    { value: 50, suffix: '+', label: 'Happy Customers', icon: 'Users' as const },
-    { value: 26, suffix: '+', label: 'Projects Completed', icon: 'Building' as const },
+    { value: 50, suffix: '+', label: 'Happy Customers in UP', icon: 'Users' as const },
+    { value: 26, suffix: '+', label: 'Projects Completed in India', icon: 'Building' as const },
     { prefix: '₹', value: 25, suffix: 'L+', label: 'Energy Savings Generated', icon: 'Zap' as const },
-    { value: 40, suffix: '+', label: 'Skilled Experts', icon: 'HardHat' as const },
-    { value: 1, suffix: '+', label: 'Government Recognition', icon: 'Award' as const },
+    { value: 40, suffix: '+', label: 'Skilled Experts on Team', icon: 'HardHat' as const },
+    { value: 1, suffix: '+', label: 'Government Project Recognition', icon: 'Award' as const },
 ];
 
   return (
@@ -103,21 +103,21 @@ export default function AboutPage() {
         <div className="container relative mx-auto px-4 text-center">
             <div className="mb-4">
                 <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-primary">
-                    15+ Years of Excellence
+                    15+ Years of Excellence in India
                 </span>
             </div>
           <h1 className="font-headline text-4xl font-bold tracking-tighter text-foreground sm:text-5xl lg:text-6xl">
-            About VK Enterprises
+            About VK Enterprises: UP's Trusted Solar & Water Experts
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            Delivering sustainable energy solutions and elegant water designs that power homes, businesses, and government projects.
+            For over 15 years, VK Enterprises has been a leader in delivering sustainable solar energy and elegant water fountain solutions across Uttar Pradesh and India.
           </p>
            <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground">
-            We combine innovation, engineering expertise, and environmental responsibility to create efficient solar systems and visually stunning water features.
+            We combine innovation, engineering expertise, and environmental responsibility to create efficient solar systems for homes in Lucknow, Noida, and Gorakhpur, and visually stunning water features for clients nationwide.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <OpenQuoteModalButton>
-              <Button size="lg" className="bg-primary text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.4)] transition-shadow hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)]">Get Free Consultation</Button>
+              <Button size="lg" className="bg-primary text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.4)] transition-shadow hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)]">Get a Free Consultation</Button>
             </OpenQuoteModalButton>
             <Button size="lg" variant="outline" asChild>
               <Link href="/projects">View Our Projects</Link>
@@ -126,15 +126,15 @@ export default function AboutPage() {
             <div className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Star className="h-4 w-4 text-accent" />
-                <span>4.8 Customer Rating</span>
+                <span>4.8 Customer Rating in Uttar Pradesh</span>
               </div>
               <div className="flex items-center gap-2">
                 <Award className="h-4 w-4 text-accent" />
-                <span>Government Project Experience</span>
+                <span>Government Turnkey Project Experience</span>
               </div>
               <div className="flex items-center gap-2">
                 <Users className="h-4 w-4 text-accent" />
-                <span>50+ Happy Clients</span>
+                <span>50+ Happy Clients Across India</span>
               </div>
             </div>
         </div>
@@ -148,10 +148,10 @@ export default function AboutPage() {
                     Who We Are
                 </span>
                 <h2 className="font-headline text-3xl font-bold tracking-tighter text-foreground sm:text-4xl">
-                    A Trusted Name in Sustainable Energy & Water Solutions
+                    A Trusted Name in Sustainable Energy & Water Solutions in India
                 </h2>
                 <p className="mt-4 text-muted-foreground">
-                    VK Enterprises is a leading provider of solar energy systems and water fountain solutions, delivering innovative and eco-friendly services for over 15+ years. We specialize in residential, commercial, and government projects, combining technical expertise with creative design to ensure high performance and visual excellence.
+                    VK Enterprises is a leading provider of solar energy systems and water fountain solutions in Uttar Pradesh. For over 15+ years, we've specialized in residential, commercial, and government projects from Lucknow to Noida, combining technical expertise with creative design to ensure high performance and visual excellence. As a top solar company in UP, we are committed to quality.
                 </p>
                 <ul className="mt-6 space-y-3">
                     {companyHighlights.map((highlight) => (
@@ -194,7 +194,7 @@ export default function AboutPage() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">To promote green energy and innovative water solutions that enhance lifestyles while protecting the environment for future generations.</p>
+                <p className="text-muted-foreground">To promote green energy and innovative water solutions across Uttar Pradesh, enhancing lifestyles while protecting the environment for future generations.</p>
               </CardContent>
             </Card>
             <Card className="transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50">
@@ -205,7 +205,7 @@ export default function AboutPage() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">To become a leading brand in solar and water solutions, known for innovation, quality, and customer trust.</p>
+                <p className="text-muted-foreground">To become the leading brand in solar panel installation and water fountain design in India, renowned for innovation, quality, and customer trust.</p>
               </CardContent>
             </Card>
           </div>
@@ -220,7 +220,7 @@ export default function AboutPage() {
               Meet Our Leadership
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-                The experts behind our success and innovation.
+                The experts driving VK Enterprises' success as a top solar and fountain company in India.
             </p>
         </header>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -263,15 +263,15 @@ export default function AboutPage() {
         <div className="container relative mx-auto px-4">
           <header className="mb-12 text-center">
             <h2 className="font-headline text-3xl font-bold tracking-tighter text-white sm:text-4xl">
-              Our Achievements & Impact
+              Our Achievements & Impact in India
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
-              Numbers that reflect our commitment to quality, sustainability, and customer satisfaction.
+              Numbers that reflect our commitment to quality, sustainability, and customer satisfaction as a leading solar contractor.
             </p>
           </header>
           <AnimatedStats stats={achievements} className="grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5" variant="dark" />
           <p className="mt-8 text-center text-sm text-slate-400">
-            Trusted by homes, businesses & government projects
+            Trusted by homes, businesses & government projects across Uttar Pradesh
           </p>
         </div>
       </section>

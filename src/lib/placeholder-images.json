@@ -2,223 +2,223 @@
   "placeholderImages": [
     {
       "id": "hero-solar-fountain",
-      "description": "A futuristic depiction of integrated solar panels and water features, symbolizing clean energy and elegant design.",
+      "description": "VK Enterprises - a leading solar panel and water fountain company in Uttar Pradesh, India.",
       "imageUrl": "/ser/5.png",
       "imageHint": "solar fountain"
     },
     {
       "id": "hero-wind-turbines",
-      "description": "Wide landscape showing wind turbines in a field with a dark gradient sky",
+      "description": "Wide landscape showing wind turbines, symbolizing renewable energy solutions from VK Enterprises in India.",
       "imageUrl": "/ser/5.png",
       "imageHint": "wind turbines field"
     },
     {
       "id": "card-solar-install",
-      "description": "Workers installing solar panels on a roof",
+      "description": "Professional solar panel installation service in Uttar Pradesh by VK Enterprises.",
       "imageUrl": "/ser/4.png",
       "imageHint": "solar installation"
     },
     {
       "id": "hero-cloudy-sky",
-      "description": "Soft white clouds in a bright sky",
+      "description": "Bright sky with clouds, representing clean energy from a top solar company in UP.",
       "imageUrl": "/ser/5.png",
       "imageHint": "cloudy sky"
     },
     {
       "id": "hero-background",
-      "description": "Modern building with solar panels under a clear blue sky",
+      "description": "Modern building with solar panel installation by VK Enterprises in Uttar Pradesh.",
       "imageUrl": "/ser/5.png",
       "imageHint": "solar panels building"
     },
     {
       "id": "service-solar",
-      "description": "Close-up of solar panels on a residential roof",
+      "description": "Close-up of high-efficiency solar panels for residential installation in UP.",
       "imageUrl": "/ser/1.png",
       "imageHint": "solar panels"
     },
     {
       "id": "service-fountain",
-      "description": "Elaborate water fountain in a public square at dusk",
+      "description": "Elaborate water fountain design in a public square at dusk by VK Enterprises, a leading fountain company in India.",
       "imageUrl": "/ser/2.png",
       "imageHint": "water fountain"
     },
     {
       "id": "service-turnkey",
-      "description": "Large-scale industrial complex with solar arrays",
+      "description": "Large-scale industrial complex with a solar array from a top turnkey project contractor in India.",
       "imageUrl": "/ser/3.png",
       "imageHint": "industrial solar"
     },
     {
       "id": "why-choose-us",
-      "description": "A person smiling and looking at a diagram of a sustainable city",
+      "description": "A person smiling, representing customer satisfaction with VK Enterprises' solar solutions in UP.",
       "imageUrl": "https://picsum.photos/seed/105/800/600",
       "imageHint": "sustainable city"
     },
     {
       "id": "testimonial-author-1",
-      "description": "Professional headshot of a smiling man",
+      "description": "Happy customer from Kanpur, UP, after solar panel installation.",
       "imageUrl": "https://picsum.photos/seed/120/100/100",
       "imageHint": "man portrait"
     },
     {
       "id": "testimonial-author-2",
-      "description": "Professional headshot of a smiling woman",
+      "description": "Happy customer from Lucknow, UP, reviewing a water fountain design.",
       "imageUrl": "https://picsum.photos/seed/121/100/100",
       "imageHint": "woman portrait"
     },
     {
       "id": "testimonial-author-3",
-      "description": "Candid shot of a person in a business setting",
+      "description": "Business owner in Prayagraj satisfied with commercial solar project.",
       "imageUrl": "https://picsum.photos/seed/122/100/100",
       "imageHint": "person business"
     },
     {
       "id": "testimonial-author-4",
-      "description": "Portrait of a happy farmer",
+      "description": "Portrait of a happy farmer in Unnao with new solar installation.",
       "imageUrl": "https://picsum.photos/seed/123/100/100",
       "imageHint": "farmer portrait"
     },
     {
       "id": "testimonial-author-5",
-      "description": "Portrait of a female architect",
+      "description": "Portrait of a female architect in Noida happy with our fountain design services.",
       "imageUrl": "https://picsum.photos/seed/124/100/100",
       "imageHint": "architect portrait"
     },
     {
       "id": "testimonial-author-6",
-      "description": "Portrait of a shop owner",
+      "description": "Portrait of a shop owner in Lucknow who saved on electricity bills with our solar panels.",
       "imageUrl": "https://picsum.photos/seed/125/100/100",
       "imageHint": "shop owner"
     },
     {
       "id": "testimonial-author-7",
-      "description": "Portrait of a professional woman",
+      "description": "Portrait of a professional woman in Kanpur satisfied with our solar installation process.",
       "imageUrl": "https://picsum.photos/seed/126/100/100",
       "imageHint": "woman professional"
     },
     {
       "id": "testimonial-author-8",
-      "description": "Portrait of a contractor",
+      "description": "Portrait of a contractor from Varanasi who trusts our turnkey project services.",
       "imageUrl": "https://picsum.photos/seed/127/100/100",
       "imageHint": "contractor portrait"
     },
     {
       "id": "testimonial-author-9",
-      "description": "Portrait of a businessman",
+      "description": "Portrait of a businessman from Ghaziabad satisfied with our industrial solar project.",
       "imageUrl": "https://picsum.photos/seed/128/100/100",
       "imageHint": "businessman portrait"
     },
     {
       "id": "about-us-main",
-      "description": "A diverse team of engineers collaborating in a modern office",
+      "description": "The diverse engineering team of VK Enterprises, a leading solar company in Uttar Pradesh.",
       "imageUrl": "/pro/5.png",
       "imageHint": "engineering team"
     },
     {
       "id": "team-vinay",
-      "description": "Portrait of Vinay Kumar Agrawal, Director",
+      "description": "Portrait of Vinay Kumar Agrawal, Director of VK Enterprises.",
       "imageUrl": "/team/2.png",
       "imageHint": "man portrait"
     },
     {
       "id": "team-akhilesh",
-      "description": "Portrait of Akhilesh Dwivedi, Project Director",
+      "description": "Portrait of Akhilesh Dwivedi, Project Director at VK Enterprises.",
       "imageUrl": "/team/1.png",
       "imageHint": "man portrait"
     },
     {
       "id": "project-solar-1",
-      "description": "Rooftop solar installation on a modern home",
+      "description": "Rooftop solar panel installation on a modern home in Uttar Pradesh.",
       "imageUrl": "https://picsum.photos/seed/114/600/400",
       "imageHint": "rooftop solar"
     },
     {
       "id": "project-solar-2",
-      "description": "Commercial building with a large array of solar panels",
+      "description": "Commercial building in UP with a large array of solar panels installed by VK Enterprises.",
       "imageUrl": "https://picsum.photos/seed/115/600/400",
       "imageHint": "commercial solar"
     },
     {
       "id": "project-fountain-1",
-      "description": "Artistic water fountain in a corporate park",
+      "description": "Artistic water fountain in a corporate park in India, designed by VK Enterprises.",
       "imageUrl": "/pro/1.jpg",
       "imageHint": "corporate fountain"
     },
     {
       "id": "project-fountain-2",
-      "description": "Interactive water feature in a children's play area",
+      "description": "Interactive water feature designed for a public space in India.",
       "imageUrl": "/pro/1.jpg",
       "imageHint": "interactive fountain"
     },
     {
       "id": "project-turnkey-1",
-      "description": "Government building with integrated solar power system",
+      "description": "Government building with an integrated solar power system by a top turnkey contractor in India.",
       "imageUrl": "https://picsum.photos/seed/118/600/400",
       "imageHint": "government solar"
     },
     {
       "id": "project-turnkey-2",
-      "description": "Large-scale solar farm in a rural area",
+      "description": "Large-scale solar farm in a rural area of India, a turnkey project by VK Enterprises.",
       "imageUrl": "https://picsum.photos/seed/119/600/400",
       "imageHint": "solar farm"
     },
     {
       "id": "solutions-background",
-      "description": "A scenic view of wind turbines on rolling hills during sunset.",
+      "description": "A scenic view of wind turbines, representing renewable energy solutions in India.",
       "imageUrl": "/ser/5.png",
       "imageHint": "wind turbines sunset"
     },
     {
       "id": "impact-solar-panels",
-      "description": "Diagonal array of solar panels with warm sunlight filtering through",
+      "description": "Diagonal array of solar panels reflecting our impact as a leading solar company in India.",
       "imageUrl": "https://picsum.photos/seed/203/800/1200",
       "imageHint": "solar panels array"
     },
     {
       "id": "project-solar-generic",
-      "description": "Array of modern solar panels on a commercial roof",
+      "description": "Array of modern solar panels on a commercial roof in Uttar Pradesh.",
       "imageUrl": "/pro/1.jpg",
       "imageHint": "solar panels"
     },
     {
       "id": "project-fountain-noida-18",
-      "description": "A modern water fountain in a bustling city sector at dusk.",
+      "description": "A modern water fountain project in Noida Sector 18, Uttar Pradesh.",
       "imageUrl": "/pro/2.jpg",
       "imageHint": "city fountain"
     },
     {
       "id": "project-turnkey-hospital",
-      "description": "Exterior of a modern, clean field hospital building.",
+      "description": "Exterior of a modern field hospital, a turnkey government project in Uttar Pradesh.",
       "imageUrl": "/pro/3.jpg",
       "imageHint": "field hospital"
     },
     {
       "id": "project-fountain-kuleshra",
-      "description": "An elegant fountain at the entry point of a modern city.",
+      "description": "An elegant fountain at the entry point of Kuleshra, Greater Noida - a VK Enterprises project.",
       "imageUrl": "https://picsum.photos/seed/304/600/400",
       "imageHint": "entrance fountain"
     },
     {
       "id": "project-fountain-parthla",
-      "description": "A large, impressive fountain at a major city intersection.",
+      "description": "A large, impressive fountain at Parthla Chowk, Noida, built by VK Enterprises.",
       "imageUrl": "https://picsum.photos/seed/305/600/400",
       "imageHint": "chowk fountain"
     },
     {
       "id": "project-fountain-gnida",
-      "description": "A grand water feature in front of an authority building.",
+      "description": "A grand water feature for the Greater Noida Industrial Development Authority (GNIDA).",
       "imageUrl": "https://picsum.photos/seed/306/600/400",
       "imageHint": "authority fountain"
     },
     {
       "id": "project-fountain-sashi-chowk",
-      "description": "A fountain near a metro station, blending with urban infrastructure.",
+      "description": "A fountain near a metro station in Noida, blending with urban infrastructure.",
       "imageUrl": "https://picsum.photos/seed/307/600/400",
       "imageHint": "metro fountain"
     },
     {
       "id": "certificate-appreciation",
-      "description": "Appreciation letter document",
+      "description": "Appreciation letter for quality work from a government solar project in India.",
       "imageUrl": "/pro/4.jpg",
       "imageHint": "appreciation letter"
     }
