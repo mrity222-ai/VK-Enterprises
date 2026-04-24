@@ -50,6 +50,7 @@ export default function Home() {
     { value: 70, suffix: '%', label: 'Saving Energy Cost' },
     { value: 100, suffix: '%', label: 'Renewable Energy' },
     { value: 23, suffix: 'M+', label: 'Worth Energy Cost' },
+    { value: 26, suffix: '+', label: 'Projects Completed' },
   ];
 
   const servicesData = [
@@ -159,7 +160,7 @@ export default function Home() {
               Trusted by thousands, proven by numbers
             </h2>
           </div>
-          <AnimatedStats stats={impactStats} className="grid-cols-1 sm:grid-cols-3 max-w-5xl mx-auto" />
+          <AnimatedStats stats={impactStats} className="grid-cols-1 sm:grid-cols-2 md:grid-cols-4 max-w-5xl mx-auto" />
         </div>
       </section>
 
