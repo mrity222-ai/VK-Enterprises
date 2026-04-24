@@ -1,9 +1,7 @@
 'use client';
 
-import { useFormStatus } from 'react-dom';
-import { useActionState, useEffect } from 'react';
+import { useState, type FormEvent } from 'react';
 import Image from 'next/image';
-import { Metadata } from 'next';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -20,49 +18,54 @@ import {
   Linkedin,
   Loader2,
 } from 'lucide-react';
-import { submitContact } from '@/lib/actions';
 import { useToast } from '@/hooks/use-toast';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
-// This is a client component, so we can't export metadata directly.
-// We can set it in the parent layout or using a custom hook if needed.
-// export const metadata: Metadata = {
-//   title: 'Contact VK Enterprises | Free Solar or Fountain Quote in UP',
-//   description: 'Get in touch with VK Enterprises for a free quote on solar panel installation or water fountain design in Uttar Pradesh. Contact our experts in Gorakhpur today.',
-// };
-
-function SubmitButton() {
-    const { pending } = useFormStatus();
-    return (
-        <Button type="submit" className="w-full" disabled={pending}>
-            {pending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-            Send Message
-        </Button>
-    )
-}
 
 export default function ContactPage() {
-    const initialState = { message: null, errors: {} };
-    const [state, dispatch] = useActionState(submitContact, initialState);
     const { toast } = useToast();
     const heroBgImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
     const linkHoverClasses = "pb-1 bg-gradient-to-r from-primary to-primary bg-no-repeat bg-left-bottom bg-[length:0%_1px] hover:bg-[length:100%_1px] transition-all duration-300 hover:text-primary hover:tracking-wide";
 
-    useEffect(() => {
-        if (state.success) {
-            toast({
-                title: "Message Sent!",
-                description: "Thank you for contacting us. We will get back to you shortly.",
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+
+        const data = {
+            name: formData.get('name'),
+            mobile: formData.get('mobile'),
+            subject: formData.get('subject'),
+            message: formData.get('message'),
+        };
+
+        try {
+            await fetch("https://script.google.com/macros/s/AKfycbzyFiMW3jnXSwJqY8RJG3DyFQaW05WLG1QWnls40g1F9U-TA8a9WIQ0J1WFYiX4uqA6/exec", {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-Type": "application/json"
+                },
             });
-            // Ideally, you'd reset the form here. This requires making the form a client component with its own state.
-        } else if (state.message && !state.success) {
+
+            toast({
+                title: "✅ Message Sent Successfully!",
+            });
+            form.reset();
+        } catch (err) {
+            console.error(err);
             toast({
                 variant: 'destructive',
-                title: "Submission Failed",
-                description: state.message,
-            })
+                title: "❌ Error! Try Again",
+                description: "There was a problem sending your message.",
+            });
+        } finally {
+            setIsSubmitting(false);
         }
-    }, [state, toast]);
+    }
 
 
   return (
@@ -156,30 +159,29 @@ export default function ContactPage() {
                 <h2 className="font-headline text-2xl font-bold">Send Us a Message for a Free Quote</h2>
                 <Card className="transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50">
                   <CardContent className="p-6">
-                    <form action={dispatch} className="space-y-4">
+                    <form onSubmit={handleSubmit} className="space-y-4">
                       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         <div className="space-y-2">
                           <Label htmlFor="name">Full Name</Label>
                           <Input id="name" name="name" placeholder="John Doe" required />
-                          {state.errors?.name && <p className="text-sm text-destructive">{state.errors.name[0]}</p>}
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="phone">MOBLE NUMBER</Label>
-                          <Input id="phone" name="phone" type="tel" placeholder="+91 9415212271" required />
-                           {state.errors?.phone && <p className="text-sm text-destructive">{state.errors.phone[0]}</p>}
+                          <Label htmlFor="mobile">MOBLE NUMBER</Label>
+                          <Input id="mobile" name="mobile" type="tel" placeholder="+91 9415212271" required pattern="[0-9]{10}" />
                         </div>
                       </div>
                       <div className="space-y-2">
                           <Label htmlFor="subject">Subject</Label>
                           <Input id="subject" name="subject" placeholder="e.g., Solar Panel Installation in Lucknow" required />
-                          {state.errors?.subject && <p className="text-sm text-destructive">{state.errors.subject[0]}</p>}
                         </div>
                       <div className="space-y-2">
                         <Label htmlFor="message">Message</Label>
                         <Textarea id="message" name="message" placeholder="Your message..." required />
-                        {state.errors?.message && <p className="text-sm text-destructive">{state.errors.message[0]}</p>}
                       </div>
-                      <SubmitButton />
+                       <Button type="submit" className="w-full" disabled={isSubmitting}>
+                            {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                            Send Message
+                        </Button>
                     </form>
                   </CardContent>
                 </Card>
