@@ -12,8 +12,8 @@ const quoteSchema = z.object({
 
 const contactSchema = z.object({
     name: z.string().min(2),
-    email: z.string().email(),
-    phone: z.string().optional(),
+    email: z.string().email().optional(),
+    phone: z.string().min(10, { message: 'Phone number must be at least 10 digits.' }),
     subject: z.string().min(3),
     message: z.string().min(10),
 });

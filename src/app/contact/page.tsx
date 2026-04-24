@@ -164,9 +164,9 @@ export default function ContactPage() {
                           {state.errors?.name && <p className="text-sm text-destructive">{state.errors.name[0]}</p>}
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="email">Email</Label>
-                          <Input id="email" name="email" type="email" placeholder="john.doe@example.com" required />
-                           {state.errors?.email && <p className="text-sm text-destructive">{state.errors.email[0]}</p>}
+                          <Label htmlFor="phone">MOBLE NUMBER</Label>
+                          <Input id="phone" name="phone" type="tel" placeholder="+91 9415212271" required />
+                           {state.errors?.phone && <p className="text-sm text-destructive">{state.errors.phone[0]}</p>}
                         </div>
                       </div>
                       <div className="space-y-2">
