@@ -153,8 +153,8 @@ export default function Home() {
       </section>
 
       <section id="impact" className="section-padding bg-muted">
-        <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
+        <div className="container mx-auto px-4 text-center">
+          <div className="mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
               Trusted by thousands, proven by numbers
             </h2>
