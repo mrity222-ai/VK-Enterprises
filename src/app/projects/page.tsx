@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect, useRef, useMemo } from 'react';
@@ -164,7 +163,7 @@ export default function ProjectsPage() {
 
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {filteredProjects.map((project, index) => {
+            {filteredProjects.map((project: any, index) => {
               const projectImage = PlaceHolderImages.find(
                 (img) => img.id === project.image
               );
@@ -183,14 +182,25 @@ export default function ProjectsPage() {
                   style={{ transitionDelay: `${index * 100}ms` }}
                 >
                   <div className="relative h-60 w-full">
-                    {projectImage && (
-                      <Image
-                        src={projectImage.imageUrl}
-                        alt={projectImage.description}
-                        data-ai-hint={projectImage.imageHint}
-                        fill
-                        className="object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-105"
+                    {project.video ? (
+                      <video
+                        src={project.video}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="h-full w-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-105"
                       />
+                    ) : (
+                      projectImage && (
+                        <Image
+                          src={projectImage.imageUrl}
+                          alt={projectImage.description}
+                          data-ai-hint={projectImage.imageHint}
+                          fill
+                          className="object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-105"
+                        />
+                      )
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                     

@@ -94,6 +94,7 @@ export const PROJECTS = [
     location: 'Kuleshra, Greater Noida',
     description: 'Successful project of water fountain in Greater Noida Entry Point Kuleshra, Noida.',
     image: 'project-fountain-kuleshra',
+    video: '/pro/v1.mp4',
   },
   {
     id: 'p5',
@@ -102,6 +103,7 @@ export const PROJECTS = [
     location: 'Parthla Chowk, Noida',
     description: 'Successful project delivery of a water fountain in E & M - |||, Noida, Parthla Chowk.',
     image: 'project-fountain-parthla',
+    video: '/pro/v2.mp4',
   },
   {
     id: 'p6',
@@ -110,6 +112,7 @@ export const PROJECTS = [
     location: 'Greater Noida',
     description: 'Successful project delivery of a water fountain for the Greater Noida Industrial Development Authority.',
     image: 'project-fountain-gnida',
+    video: '/pro/v3.mp4',
   },
   {
     id: 'p7',
@@ -118,6 +121,7 @@ export const PROJECTS = [
     location: 'Noida',
     description: 'Successful project delivery of a water fountain at Sashi chowk near Golf course metro station, Noida (Division: E&M - III).',
     image: 'project-fountain-sashi-chowk',
+    video: '/pro/v4.mp4',
   },
 ];
 
