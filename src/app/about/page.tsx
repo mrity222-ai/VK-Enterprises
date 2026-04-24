@@ -228,14 +228,14 @@ export default function AboutPage() {
             const memberImage = PlaceHolderImages.find((img) => img.id === member.image);
             return (
               <Card key={member.name} className="overflow-hidden transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50">
-                  <div className="flex flex-col items-center p-6 text-center sm:flex-row sm:p-8 sm:text-left">
-                      <Avatar className="mx-auto h-32 w-32 border-4 border-primary/20 sm:mx-0">
+                  <div className="flex flex-col items-center p-6 text-center sm:p-8">
+                      <Avatar className="h-32 w-32 border-4 border-primary/20">
                           {memberImage && (
                               <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} />
                           )}
                           <AvatarFallback className="bg-muted text-foreground">{member.name.charAt(0)}</AvatarFallback>
                       </Avatar>
-                      <div className="mt-4 sm:ml-6 sm:mt-0">
+                      <div className="mt-4">
                           <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
                           <p className="text-sm text-primary">{member.role}</p>
                           <p className="mt-2 text-sm text-muted-foreground">{member.description}</p>
