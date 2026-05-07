@@ -72,13 +72,12 @@ export const PROJECTS = [
     image: 'project-solar-generic',
   },
   {
-    id: 'p8',
-    title: 'Laser, Light & Sound Show Digital Experience Project',
-    category: 'turnkey',
-    location: 'Greater Noida, UP',
-    description: 'Modern “Laser, Light & Sound Show” inauguration event ke liye digital presentation aur online visibility support provide kiya gaya. Project ka objective tha event ko professionally showcase karna, public engagement improve karna aur heritage presentation ko modern digital format me represent karna.',
-    image: 'project-solar-generic',
-    video: '/pro/v5.mp4',
+    id: 'p2',
+    title: 'Noida Sector 18 Fountain Project',
+    category: 'fountain',
+    location: 'Noida Sector 18, Uttar Pradesh',
+    description: 'Successful delivery of a modern water fountain for the Noida Authority in a high-traffic urban location. A landmark project by India\'s leading fountain designers.',
+    image: 'project-fountain-noida-18',
   },
   {
     id: 'p3',
@@ -87,6 +86,15 @@ export const PROJECTS = [
     location: 'Chauri Chaura, Uttar Pradesh',
     description: 'As a leading turnkey project contractor in India, we constructed a 50-bed field hospital in Chauri Chaura, Uttar Pradesh, for the government.',
     image: 'project-turnkey-hospital',
+  },
+  {
+    id: 'p8',
+    title: 'Laser, Light & Sound Show Digital Experience Project',
+    category: 'turnkey',
+    location: 'Greater Noida, UP',
+    description: 'Modern “Laser, Light & Sound Show” inauguration event ke liye digital presentation aur online visibility support provide kiya gaya. Project ka objective tha event ko professionally showcase karna, public engagement improve karna aur heritage presentation ko modern digital format me represent karna.',
+    image: 'project-solar-generic',
+    video: '/pro/v5.mp4',
   },
   {
     id: 'p4',
@@ -141,14 +149,6 @@ export const PROJECTS = [
     description: 'A grand musical fountain installation at Lucknow\'s iconic Janeshwar Mishra Park, blending lights, music, and water choreography.',
     image: 'project-fountain-1',
     video: '/pro/v2.mp4',
-  },
-  {
-    id: 'p2',
-    title: 'Noida Sector 18 Fountain Project',
-    category: 'fountain',
-    location: 'Noida Sector 18, Uttar Pradesh',
-    description: 'Successful delivery of a modern water fountain for the Noida Authority in a high-traffic urban location. A landmark project by India\'s leading fountain designers.',
-    image: 'project-fountain-noida-18',
   },
 ];
 
