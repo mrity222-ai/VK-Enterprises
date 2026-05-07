@@ -65,10 +65,10 @@ export const SOLAR_SOLUTIONS = [
 export const PROJECTS = [
   {
     id: 'p8',
-    title: 'Commercial Solar Array, Gorakhpur',
-    category: 'solar',
+    title: 'Laser, Light & Sound Show Digital Experience Project',
+    category: 'turnkey',
     location: 'Gorakhpur, Uttar Pradesh',
-    description: 'Large-scale commercial solar installation providing sustainable energy for a major manufacturing unit in Gorakhpur.',
+    description: 'A spectacular multimedia experience featuring synchronized lasers, lights, and high-fidelity sound for an immersive digital show in Gorakhpur.',
     image: 'project-solar-generic',
     video: '/pro/v5.mp4',
   },
