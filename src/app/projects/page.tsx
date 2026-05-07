@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { PROJECTS } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { cn } from '@/lib/utils';
-import { MapPin, Users, Building, Zap, CirclePlay } from 'lucide-react';
+import { MapPin, Users, Building, Zap } from 'lucide-react';
 import { CtaSection } from '@/components/cta-section';
 import { OpenQuoteModalButton } from '@/components/get-quote-modal';
 import { Badge } from '@/components/ui/badge';
@@ -164,7 +164,6 @@ export default function ProjectsPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
-                    <Badge className="mb-2 bg-primary/80 backdrop-blur-sm border-none">{categoryDisplay[project.category as keyof typeof categoryDisplay]}</Badge>
                     <h3 className="font-headline text-lg font-bold leading-tight">{project.title}</h3>
                   </div>
                 </div>
@@ -201,7 +200,6 @@ export default function ProjectsPage() {
                 (img) => img.id === project.image
               );
               const isVisible = visibleProjects.has(project.id);
-              const categoryText = categoryDisplay[project.category as keyof typeof categoryDisplay] || project.category;
               return (
                 <Card
                   key={project.id}
@@ -236,10 +234,6 @@ export default function ProjectsPage() {
                       )
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                    
-                    <div className="absolute top-3 right-3 rounded-full bg-background/80 px-3 py-1 text-xs font-semibold capitalize backdrop-blur-sm">
-                      {categoryText}
-                    </div>
                   </div>
                   <CardHeader>
                     <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
