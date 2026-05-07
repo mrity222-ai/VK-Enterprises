@@ -151,7 +151,6 @@ export const PROJECTS = [
   },
 ];
 
-
 export const TESTIMONIALS = [
   {
     name: 'Amit Verma',

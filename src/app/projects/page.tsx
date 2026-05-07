@@ -33,7 +33,7 @@ export default function ProjectsPage() {
     [activeFilter]
   );
 
-  const videoProjects = useMemo(() => PROJECTS.filter(p => p.video).slice(0, 3), []);
+  const videoProjects = useMemo(() => PROJECTS.filter(p => p.video).slice(0, 6), []);
     
   const heroBgImage = PlaceHolderImages.find((img) => img.id === 'project-solar-generic');
   
