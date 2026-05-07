@@ -64,6 +64,14 @@ export const SOLAR_SOLUTIONS = [
 
 export const PROJECTS = [
   {
+    id: 'p1',
+    title: 'Residential & Commercial Solar Panel Projects in Uttar Pradesh',
+    category: 'solar',
+    location: 'Various Locations across UP',
+    description: 'Showcasing our successful solar panel installations across UP. We deliver innovative and high-efficiency solar solutions for homes and businesses, reducing energy costs.',
+    image: 'project-solar-generic',
+  },
+  {
     id: 'p8',
     title: 'Laser, Light & Sound Show Digital Experience Project',
     category: 'turnkey',
@@ -125,14 +133,6 @@ export const PROJECTS = [
     description: 'A grand musical fountain installation at Lucknow\'s iconic Janeshwar Mishra Park, blending lights, music, and water choreography.',
     image: 'project-fountain-1',
     video: '/pro/v2.mp4',
-  },
-  {
-    id: 'p1',
-    title: 'Residential & Commercial Solar Panel Projects in Uttar Pradesh',
-    category: 'solar',
-    location: 'Various Locations across UP',
-    description: 'Showcasing our successful solar panel installations across UP. We deliver innovative and high-efficiency solar solutions for homes and businesses, reducing energy costs.',
-    image: 'project-solar-generic',
   },
   {
     id: 'p2',
