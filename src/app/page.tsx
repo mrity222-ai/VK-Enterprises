@@ -256,6 +256,46 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="video-highlights" className="section-padding bg-background">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="font-headline text-3xl font-bold tracking-tighter text-foreground sm:text-4xl">
+              Project Highlights in Action
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+              Experience the excellence and innovation of VK Enterprises through these visual project showcases across Uttar Pradesh.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            {videoProjects.map((project) => (
+              <Card key={project.id} className="group overflow-hidden rounded-2xl border transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/30">
+                <div className="relative aspect-video w-full overflow-hidden">
+                  <video
+                    src={project.video}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <Badge className="mb-2 bg-primary/80 backdrop-blur-sm border-none">{project.category}</Badge>
+                    <h3 className="font-headline text-lg font-bold leading-tight line-clamp-2">{project.title}</h3>
+                  </div>
+                </div>
+                <CardContent className="p-4 bg-card">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <MapPin className="h-4 w-4 text-primary" />
+                    <span className="line-clamp-1">{project.location}</span>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="about-us" className="section-padding bg-muted">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
@@ -375,46 +415,6 @@ export default function Home() {
                 </Card>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      <section id="video-highlights" className="section-padding bg-background">
-        <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
-            <h2 className="font-headline text-3xl font-bold tracking-tighter text-foreground sm:text-4xl">
-              Project Highlights in Action
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-              Experience the excellence and innovation of VK Enterprises through these visual project showcases across Uttar Pradesh.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            {videoProjects.map((project) => (
-              <Card key={project.id} className="group overflow-hidden rounded-2xl border transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/30">
-                <div className="relative aspect-video w-full overflow-hidden">
-                  <video
-                    src={project.video}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90" />
-                  <div className="absolute bottom-4 left-4 right-4 text-white">
-                    <Badge className="mb-2 bg-primary/80 backdrop-blur-sm border-none">{project.category}</Badge>
-                    <h3 className="font-headline text-lg font-bold leading-tight line-clamp-2">{project.title}</h3>
-                  </div>
-                </div>
-                <CardContent className="p-4 bg-card">
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <MapPin className="h-4 w-4 text-primary" />
-                    <span className="line-clamp-1">{project.location}</span>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
