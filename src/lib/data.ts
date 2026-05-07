@@ -81,6 +81,14 @@ export const PROJECTS = [
     video: '/pro/v5.mp4',
   },
   {
+    id: 'p3',
+    title: '50-Bed Hospital Turnkey Project',
+    category: 'turnkey',
+    location: 'Chauri Chaura, Uttar Pradesh',
+    description: 'As a leading turnkey project contractor in India, we constructed a 50-bed field hospital in Chauri Chaura, Uttar Pradesh, for the government.',
+    image: 'project-turnkey-hospital',
+  },
+  {
     id: 'p4',
     title: 'Greater Noida Entry Point Fountain',
     category: 'fountain',
@@ -141,14 +149,6 @@ export const PROJECTS = [
     location: 'Noida Sector 18, Uttar Pradesh',
     description: 'Successful delivery of a modern water fountain for the Noida Authority in a high-traffic urban location. A landmark project by India\'s leading fountain designers.',
     image: 'project-fountain-noida-18',
-  },
-  {
-    id: 'p3',
-    title: '50-Bed Hospital Turnkey Project',
-    category: 'turnkey',
-    location: 'Chauri Chaura, Uttar Pradesh',
-    description: 'As a leading turnkey project contractor in India, we constructed a 50-bed field hospital in Chauri Chaura, Uttar Pradesh, for the government.',
-    image: 'project-turnkey-hospital',
   },
 ];
 
