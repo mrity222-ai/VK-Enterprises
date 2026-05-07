@@ -8,6 +8,10 @@ const certificates = [
     id: 'certificate-appreciation',
     title: 'Appreciation Letter',
   },
+  {
+    id: 'certificate-iso',
+    title: 'ISO 9001:2015 Quality Management',
+  },
 ];
 
 export function CertificationsSection() {
@@ -22,13 +26,13 @@ export function CertificationsSection() {
             We are committed to the highest standards of quality and safety in every project we undertake.
           </p>
         </header>
-        <div className="mx-auto grid max-w-sm grid-cols-1 gap-8">
+        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
           {certificates.map((cert) => {
             const certImage = PlaceHolderImages.find((img) => img.id === cert.id);
             return (
               <Card key={cert.id} className="group overflow-hidden text-center transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50">
                 {certImage && (
-                  <div className="relative h-96 w-full">
+                  <div className="relative h-[500px] w-full">
                     <Image
                       src={certImage.imageUrl}
                       alt={certImage.description}
@@ -38,7 +42,7 @@ export function CertificationsSection() {
                     />
                   </div>
                 )}
-                <div className="p-4">
+                <div className="p-4 bg-background">
                   <h3 className="text-lg font-semibold">{cert.title}</h3>
                 </div>
               </Card>

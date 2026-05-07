@@ -221,6 +221,12 @@
       "description": "Appreciation letter for quality work from a government solar project in India.",
       "imageUrl": "/pro/4.jpg",
       "imageHint": "appreciation letter"
+    },
+    {
+      "id": "certificate-iso",
+      "description": "ISO Quality Management Certification for VK Enterprises.",
+      "imageUrl": "https://picsum.photos/seed/401/600/800",
+      "imageHint": "iso certificate"
     }
   ]
 }
