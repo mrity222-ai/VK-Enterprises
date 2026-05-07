@@ -139,7 +139,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* New Video Highlights Section */}
+      {/* Featured Video Spotlights Section */}
       <section id="video-spotlights" className="section-padding bg-muted">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
@@ -239,19 +239,6 @@ export default function ProjectsPage() {
                     
                     <div className="absolute top-3 right-3 rounded-full bg-background/80 px-3 py-1 text-xs font-semibold capitalize backdrop-blur-sm">
                       {categoryText}
-                    </div>
-
-                    <div className="absolute inset-0 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <Button variant="secondary">
-                          {project.video ? (
-                              <>
-                                  <CirclePlay className="mr-2" />
-                                  <span>View Video</span>
-                              </>
-                          ) : (
-                              'View Details'
-                          )}
-                        </Button>
                     </div>
                   </div>
                   <CardHeader>
