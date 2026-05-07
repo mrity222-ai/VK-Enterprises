@@ -12,15 +12,8 @@ import { MapPin, Users, Building, Zap, CirclePlay } from 'lucide-react';
 import { CtaSection } from '@/components/cta-section';
 import { OpenQuoteModalButton } from '@/components/get-quote-modal';
 import { Badge } from '@/components/ui/badge';
-import { Metadata } from 'next';
 
 type Filter = 'all' | 'solar' | 'fountain' | 'turnkey';
-
-// Client component, so no metadata export
-// export const metadata: Metadata = {
-//   title: 'Our Projects | Solar & Fountain Portfolio in Uttar Pradesh',
-//   description: 'Explore the portfolio of VK Enterprises, a leading solar and water fountain company in Uttar Pradesh. See our completed projects in Noida, Lucknow, Gorakhpur, and more.',
-// };
 
 const filters: { label: string; value: Filter }[] = [
   { label: 'All Projects', value: 'all' },
@@ -39,6 +32,8 @@ export default function ProjectsPage() {
       ),
     [activeFilter]
   );
+
+  const videoProjects = useMemo(() => PROJECTS.filter(p => p.video).slice(0, 3), []);
     
   const heroBgImage = PlaceHolderImages.find((img) => img.id === 'project-solar-generic');
   
@@ -52,7 +47,6 @@ export default function ProjectsPage() {
   };
 
   useEffect(() => {
-    // Reset refs and visible projects when filter changes
     projectRefs.current = projectRefs.current.slice(0, filteredProjects.length);
     setVisibleProjects(new Set());
     
@@ -113,9 +107,6 @@ export default function ProjectsPage() {
           <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground">
             Turning Ideas into Sustainable Reality Across Uttar Pradesh
           </p>
-          <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground">
-            Explore our diverse range of solar, water fountain, and large-scale turnkey projects in UP. Our work reflects our commitment to quality, innovation, and customer satisfaction in every installation.
-          </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Button size="lg" asChild>
               <Link href="#projects-grid">View All Projects</Link>
@@ -144,6 +135,41 @@ export default function ProjectsPage() {
                   <Zap className="h-4 w-4 text-accent" />
                   <span>15+ Years Experience in India</span>
               </div>
+          </div>
+        </div>
+      </section>
+
+      {/* New Video Highlights Section */}
+      <section id="video-spotlights" className="section-padding bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="font-headline text-3xl font-bold tracking-tighter text-foreground sm:text-4xl">
+              Featured Project Showcases
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+              Experience our latest solar and water fountain projects in high-definition video.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            {videoProjects.map((project) => (
+              <Card key={`featured-${project.id}`} className="group overflow-hidden rounded-2xl border transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/30">
+                <div className="relative aspect-video w-full overflow-hidden">
+                  <video
+                    src={project.video}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <Badge className="mb-2 bg-primary/80 backdrop-blur-sm border-none">{categoryDisplay[project.category as keyof typeof categoryDisplay]}</Badge>
+                    <h3 className="font-headline text-lg font-bold leading-tight">{project.title}</h3>
+                  </div>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

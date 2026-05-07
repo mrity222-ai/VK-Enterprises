@@ -1,4 +1,3 @@
-
 export const SERVICES = [
   {
     id: 'solar',
@@ -122,6 +121,24 @@ export const PROJECTS = [
     description: 'Successful project delivery of a water fountain at Sashi chowk near Golf course metro station, Noida (Division: E&M - III).',
     image: 'project-fountain-sashi-chowk',
     video: '/pro/v4.mp4',
+  },
+  {
+    id: 'p8',
+    title: 'Commercial Solar Array, Gorakhpur',
+    category: 'solar',
+    location: 'Gorakhpur, Uttar Pradesh',
+    description: 'Large-scale commercial solar installation providing sustainable energy for a major manufacturing unit in Gorakhpur.',
+    image: 'project-solar-generic',
+    video: '/pro/v1.mp4',
+  },
+  {
+    id: 'p9',
+    title: 'Janeshwar Mishra Park Musical Fountain',
+    category: 'fountain',
+    location: 'Lucknow, Uttar Pradesh',
+    description: 'A grand musical fountain installation at Lucknow\'s iconic Janeshwar Mishra Park, blending lights, music, and water choreography.',
+    image: 'project-fountain-1',
+    video: '/pro/v2.mp4',
   },
 ];
 
