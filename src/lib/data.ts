@@ -129,7 +129,7 @@ export const PROJECTS = [
     location: 'Gorakhpur, Uttar Pradesh',
     description: 'Large-scale commercial solar installation providing sustainable energy for a major manufacturing unit in Gorakhpur.',
     image: 'project-solar-generic',
-    video: '/pro/v1.mp4',
+    video: '/pro/v5.mp4',
   },
   {
     id: 'p9',
@@ -139,6 +139,15 @@ export const PROJECTS = [
     description: 'A grand musical fountain installation at Lucknow\'s iconic Janeshwar Mishra Park, blending lights, music, and water choreography.',
     image: 'project-fountain-1',
     video: '/pro/v2.mp4',
+  },
+  {
+    id: 'p10',
+    title: 'Residential Solar Rooftop, Lucknow',
+    category: 'solar',
+    location: 'Lucknow, Uttar Pradesh',
+    description: 'A clean and efficient 5kW rooftop solar installation for a luxury residence in Lucknow, helping the family achieve energy independence.',
+    image: 'project-solar-generic',
+    video: '/pro/v6.mp4',
   },
 ];
 
