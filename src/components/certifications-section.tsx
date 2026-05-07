@@ -10,7 +10,7 @@ const certificates = [
   },
   {
     id: 'certificate-iso',
-    title: 'ISO 9001:2015 Quality Management',
+    title: 'Office of Yogi Adityanath related promotional/public information campaign.',
   },
 ];
 
@@ -20,7 +20,7 @@ export function CertificationsSection() {
       <div className="container mx-auto px-4">
         <header className="mb-12 text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter text-foreground sm:text-4xl">
-            Our Certifications
+            Appreciation
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             We are committed to the highest standards of quality and safety in every project we undertake.
@@ -32,7 +32,7 @@ export function CertificationsSection() {
             return (
               <Card key={cert.id} className="group overflow-hidden text-center transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50">
                 {certImage && (
-                  <div className="relative h-[500px] w-full">
+                  <div className="relative h-[400px] w-full">
                     <Image
                       src={certImage.imageUrl}
                       alt={certImage.description}
