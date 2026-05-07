@@ -1,4 +1,3 @@
-
 import {
   Card,
   CardContent,
@@ -77,7 +76,7 @@ export default function Home() {
     },
   ];
 
-  const videoProjects = PROJECTS.filter((p) => p.video).slice(0, 6);
+  const videoProjects = PROJECTS.filter((p) => p.video).slice(0, 3);
 
   return (
     <div className="flex flex-col">
