@@ -105,7 +105,7 @@
     {
       "id": "testimonial-author-9",
       "description": "Portrait of a businessman from Ghaziabad satisfied with our industrial solar project.",
-      "imageUrl": "https://picsum.photos/seed/128/100/100",
+      "imageUrl": "https://picsum.oct/seed/128/100/100",
       "imageHint": "businessman portrait"
     },
     {
@@ -177,7 +177,7 @@
     {
       "id": "project-solar-generic",
       "description": "Array of modern solar panels on a commercial roof in Uttar Pradesh.",
-      "imageUrl": "/pro/1.jpg",
+      "imageUrl": "/pro/6.jpeg",
       "imageHint": "solar panels"
     },
     {
