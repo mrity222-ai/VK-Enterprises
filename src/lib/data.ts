@@ -1,67 +1,4 @@
 
-export const SERVICES = [
-  {
-    id: 'solar',
-    title: 'Solar Panel Installation in Uttar Pradesh',
-    description:
-      'As a leading solar company in UP, VK Enterprises provides top-tier solar panel installation for residential and commercial properties in Lucknow, Noida, Kanpur, Gorakhpur, and across Uttar Pradesh. We are experts in government solar projects and provide end-to-end solutions.',
-    icon: 'Sun',
-    image: 'service-solar',
-    benefits: [
-      'Reduce electricity bills significantly',
-      'Increase your property value',
-      'Gain energy independence',
-      'Minimal maintenance with long-term warranties',
-    ],
-  },
-  {
-    id: 'fountain',
-    title: 'Water Fountain Design Company India',
-    description:
-      'VK Enterprises is a premier water fountain design company in India. We design and install stunning, custom water features for parks, hotels, corporate offices, and luxury homes nationwide, creating landmarks of elegance and tranquility.',
-    icon: 'Droplets',
-    image: 'service-fountain',
-    benefits: [
-      'Bespoke and innovative fountain designs',
-      'High-quality, durable materials',
-      'Expert installation and maintenance',
-      'Adds a luxurious, high-end feel to any space',
-    ],
-  },
-  {
-    id: 'turnkey',
-    title: 'Turnkey Project Contractor India',
-    description:
-      'We are a trusted turnkey project contractor for large-scale government and commercial projects in India. Our services cover everything from initial design and planning to final execution and handover, ensuring projects are completed on time and within budget.',
-    icon: 'Package',
-    image: 'service-turnkey',
-    benefits: [
-      'Complete end-to-end project management',
-      'Full compliance with government standards',
-      'Scalable solutions for large-scale infrastructure',
-      'Proven track record with government agencies',
-    ],
-  },
-];
-
-export const SOLAR_SOLUTIONS = [
-  {
-    id: 'solar-panels',
-    title: 'Solar Panel Installation in UP',
-    description: 'Installation, maintenance, and repair of solar panels for homes and businesses across Uttar Pradesh.',
-  },
-  {
-    id: 'water-fountain',
-    title: 'Water Fountain Design India',
-    description: 'Custom-designed fountains for gardens, parks, hotels, and commercial spaces throughout India.',
-  },
-  {
-    id: 'turnkey-project',
-    title: 'Turnkey Project Contractor India',
-    description: 'We specialize in commercial projects and also collaborate with government sectors for large-scale developments.',
-  },
-];
-
 export const PROJECTS = [
   {
     id: 'p1',
@@ -70,15 +7,6 @@ export const PROJECTS = [
     location: 'Various Locations across UP',
     description: 'Showcasing our successful solar panel installations across UP. We deliver innovative and high-efficiency solar solutions for homes and businesses, reducing energy costs.',
     image: 'project-solar-generic',
-  },
-  {
-    id: 'p8',
-    title: 'Laser, Light & Sound Show Digital Experience Project',
-    category: 'turnkey',
-    location: 'Greater Noida, UP',
-    description: 'Modern “Laser, Light & Sound Show” inauguration event ke liye digital presentation aur online visibility support provide kiya gaya. Project ka objective tha event ko professionally showcase karna, public engagement improve karna aur heritage presentation ko modern digital format me represent karna.',
-    image: 'project-fountain-1',
-    video: '/pro/v5.mp4',
   },
   {
     id: 'p2',
@@ -95,6 +23,15 @@ export const PROJECTS = [
     location: 'Chauri Chaura, Uttar Pradesh',
     description: 'As a leading turnkey project contractor in India, we constructed a 50-bed field hospital in Chauri Chaura, Uttar Pradesh, for the government.',
     image: 'project-turnkey-hospital',
+  },
+  {
+    id: 'p8',
+    title: 'Laser, Light & Sound Show Digital Experience Project',
+    category: 'turnkey',
+    location: 'Greater Noida, UP',
+    description: 'Modern “Laser, Light & Sound Show” inauguration event ke liye digital presentation aur online visibility support provide kiya gaya. Project ka objective tha event ko professionally showcase karna, public engagement improve karna aur heritage presentation ko modern digital format me represent karna.',
+    image: 'project-fountain-1',
+    video: '/pro/v5.mp4',
   },
   {
     id: 'p4',
@@ -212,4 +149,49 @@ export const TESTIMONIALS = [
 export const TEAM = [
     { name: "Vinay Kumar Agrawal", role: "Director", image: "team-vinay", description: "Vinay Kumar Agrawal, Director of VK Enterprises, has built an inspiring legacy over the past 25+ years. Starting from a small venture dealing in aluminum foil and containers, he transformed his journey into a successful business empire through dedication, consistency, and strong business ethics. Under his leadership, VK Enterprises has emerged as a trusted name in delivering high-quality solutions across multiple industries. His vision focuses on innovation, customer satisfaction, and long-term growth, making the company a reliable partner for clients across India." },
     { name: "Akhilesh Dwivedi", role: "Project Director", image: "team-akhilesh", description: "Akhilesh Dwivedi, Project Director at VK Enterprises, is a visionary expert in designing world-class water fountains and aquatic landscapes. With an MBA degree and 19+ years of experience, he combines technical expertise with creative excellence. He has successfully delivered numerous landmark projects across India, making VK Enterprises a leading brand in fountain design and execution. His focus on innovation, precision, and aesthetics ensures every project stands out with both beauty and functionality." },
+];
+
+export const SERVICES = [
+  {
+    id: 'solar',
+    title: 'Solar Panel Installation in Uttar Pradesh',
+    description:
+      'As a leading solar company in UP, VK Enterprises provides top-tier solar panel installation for residential and commercial properties in Lucknow, Noida, Kanpur, Gorakhpur, and across Uttar Pradesh. We are experts in government solar projects and provide end-to-end solutions.',
+    icon: 'Sun',
+    image: 'service-solar',
+    benefits: [
+      'Reduce electricity bills significantly',
+      'Increase your property value',
+      'Gain energy independence',
+      'Minimal maintenance with long-term warranties',
+    ],
+  },
+  {
+    id: 'fountain',
+    title: 'Water Fountain Design Company India',
+    description:
+      'VK Enterprises is a premier water fountain design company in India. We design and install stunning, custom water features for parks, hotels, corporate offices, and luxury homes nationwide, creating landmarks of elegance and tranquility.',
+    icon: 'Droplets',
+    image: 'service-fountain',
+    benefits: [
+      'Bespoke and innovative fountain designs',
+      'High-quality, durable materials',
+      'Expert installation and maintenance',
+      'Adds a luxurious, high-end feel to any space',
+    ],
+  },
+  {
+    id: 'turnkey',
+    title: 'Turnkey Project Contractor India',
+    description:
+      'We are a trusted turnkey project contractor for large-scale government and commercial projects in India. Our services cover everything from initial design and planning to final execution and handover, ensuring projects are completed on time and within budget.',
+    icon: 'Package',
+    image: 'service-turnkey',
+    benefits: [
+      'Complete end-to-end project management',
+      'Full compliance with government standards',
+      'Scalable solutions for large-scale infrastructure',
+      'Proven track record with government agencies',
+    ],
+  },
 ];

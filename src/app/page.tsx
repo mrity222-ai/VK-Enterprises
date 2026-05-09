@@ -1,3 +1,4 @@
+
 import {
   Card,
   CardContent,
@@ -5,25 +6,24 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { SOLAR_SOLUTIONS, TESTIMONIALS, PROJECTS } from '@/lib/data';
+import { PROJECTS, TESTIMONIALS } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
-  Quote,
-  Leaf,
   ArrowRight,
   MapPin,
   Rocket,
   Award,
   Star,
   Zap,
-  ChevronDown,
   CirclePlay,
   Sun,
   Droplets,
   Building,
   Heart,
   Share2,
+  Quote,
+  Leaf,
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import {
@@ -38,18 +38,16 @@ import { CtaSection } from '@/components/cta-section';
 import { CertificationsSection } from '@/components/certifications-section';
 import { Badge } from '@/components/ui/badge';
 
-
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-solar-fountain');
   const cardImage = PlaceHolderImages.find((img) => img.id === 'card-solar-install');
-  const solutionsBgImage = PlaceHolderImages.find((img) => img.id === 'solutions-background');
   const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-us-main');
 
   const impactStats = [
-    { value: 70, suffix: '%', label: 'Energy Cost Savings' },
-    { value: 100, suffix: '%', label: '100% Green Energy' },
-    { value: 23, suffix: 'M+', label: 'Project Value Delivered' },
-    { value: 26, suffix: '+', label: 'Projects Completed Successfully' },
+    { value: 70, suffix: '%', label: 'Energy Cost Savings', icon: 'Zap' as const },
+    { value: 100, suffix: '%', label: 'Green Energy Adopted', icon: 'Sun' as const },
+    { value: 25, suffix: 'L+', label: 'Energy Savings Generated', icon: 'Award' as const },
+    { value: 26, suffix: '+', label: 'Projects Completed', icon: 'Building' as const },
   ];
 
   const servicesData = [
@@ -95,7 +93,6 @@ export default function Home() {
         <div className="container relative mx-auto grid min-h-screen items-center px-4 md:grid-cols-2 section-padding gap-8">
           {/* Left Section */}
           <div className="text-center md:text-left">
-            
             <h1 className="font-headline text-5xl font-bold tracking-tight text-foreground sm:text-6xl md:text-7xl">
               Top <span className="text-gradient">Solar & Water Fountain</span> Company in Uttar Pradesh
             </h1>
@@ -384,7 +381,7 @@ export default function Home() {
                 >
                   <div
                     className={cn(
-                      'relative h-80 w-full overflow-hidden md:h-full',
+                      'relative aspect-[16/10] w-full overflow-hidden md:h-full',
                       index % 2 !== 0 && 'md:order-last'
                     )}
                   >
@@ -476,50 +473,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-padding bg-muted">
-        <div className="container mx-auto px-4">
-            <div className="mb-12 grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
-                <div>
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
-                        Eco Technology Integration by VK Enterprises
-                    </h2>
-                </div>
-                <div>
-                    <p className="text-lg text-muted-foreground">
-                        As a leading solar company in UP, we integrate smart solar solutions with eco-friendly technology to boost efficiency, cut costs, and protect the environment.
-                    </p>
-                </div>
-            </div>
-            
-            <div className="relative">
-                <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-border md:block" aria-hidden="true" />
-                <div className="absolute left-1/2 top-1/2 hidden h-8 w-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 bg-background md:flex" aria-hidden="true">
-                    <Leaf className="h-4 w-4 text-primary" />
-                </div>
-
-                <div className="grid grid-cols-1 gap-y-8 md:grid-cols-2">
-                    <div className="flex flex-col items-center text-center md:pr-6">
-                        <p className="font-headline text-6xl font-bold tracking-tighter text-chart-1">390MW+</p>
-                        <h4 className="mt-4 text-xl font-bold">Clean Energy Generated</h4>
-                        <p className="mt-2 max-w-xs text-muted-foreground">
-                            We've produced massive amounts of renewable energy to power thousands of homes and businesses across India.
-                        </p>
-                    </div>
-
-                    <hr className="border-border md:hidden" />
-
-                    <div className="flex flex-col items-center text-center md:pl-6">
-                        <p className="font-headline text-6xl font-bold tracking-tighter text-chart-1">1,050+</p>
-                        <h4 className="mt-4 text-xl font-bold">Businesses Empowered in UP</h4>
-                        <p className="mt-2 max-w-xs text-muted-foreground">
-                            We've helped companies in Uttar Pradesh reduce costs and achieve sustainability goals through solar power.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-      
       <section id="testimonials" className="section-padding bg-background">
         <div className="container mx-auto px-4">
           <Carousel
@@ -569,7 +522,6 @@ export default function Home() {
       </section>
 
       <CertificationsSection />
-
       <CtaSection />
     </div>
   );
