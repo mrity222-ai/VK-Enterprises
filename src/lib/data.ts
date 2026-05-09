@@ -64,6 +64,15 @@ export const SOLAR_SOLUTIONS = [
 
 export const PROJECTS = [
   {
+    id: 'p8',
+    title: 'Laser, Light & Sound Show Digital Experience Project',
+    category: 'turnkey',
+    location: 'Greater Noida, UP',
+    description: 'Modern “Laser, Light & Sound Show” inauguration event ke liye digital presentation aur online visibility support provide kiya gaya. Project ka objective tha event ko professionally showcase karna, public engagement improve karna aur heritage presentation ko modern digital format me represent karna.',
+    image: 'project-fountain-1',
+    video: '/pro/v5.mp4',
+  },
+  {
     id: 'p1',
     title: 'Residential & Commercial Solar Panel Projects in Uttar Pradesh',
     category: 'solar',
@@ -86,15 +95,6 @@ export const PROJECTS = [
     location: 'Chauri Chaura, Uttar Pradesh',
     description: 'As a leading turnkey project contractor in India, we constructed a 50-bed field hospital in Chauri Chaura, Uttar Pradesh, for the government.',
     image: 'project-turnkey-hospital',
-  },
-  {
-    id: 'p8',
-    title: 'Laser, Light & Sound Show Digital Experience Project',
-    category: 'turnkey',
-    location: 'Greater Noida, UP',
-    description: 'Modern “Laser, Light & Sound Show” inauguration event ke liye digital presentation aur online visibility support provide kiya gaya. Project ka objective tha event ko professionally showcase karna, public engagement improve karna aur heritage presentation ko modern digital format me represent karna.',
-    image: 'project-solar-generic',
-    video: '/pro/v5.mp4',
   },
   {
     id: 'p4',
