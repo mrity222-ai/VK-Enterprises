@@ -64,6 +64,14 @@ export const SOLAR_SOLUTIONS = [
 
 export const PROJECTS = [
   {
+    id: 'p1',
+    title: 'Residential & Commercial Solar Panel Projects in Uttar Pradesh',
+    category: 'solar',
+    location: 'Various Locations across UP',
+    description: 'Showcasing our successful solar panel installations across UP. We deliver innovative and high-efficiency solar solutions for homes and businesses, reducing energy costs.',
+    image: 'project-solar-generic',
+  },
+  {
     id: 'p8',
     title: 'Laser, Light & Sound Show Digital Experience Project',
     category: 'turnkey',
@@ -71,14 +79,6 @@ export const PROJECTS = [
     description: 'Modern “Laser, Light & Sound Show” inauguration event ke liye digital presentation aur online visibility support provide kiya gaya. Project ka objective tha event ko professionally showcase karna, public engagement improve karna aur heritage presentation ko modern digital format me represent karna.',
     image: 'project-fountain-1',
     video: '/pro/v5.mp4',
-  },
-  {
-    id: 'p1',
-    title: 'Residential & Commercial Solar Panel Projects in Uttar Pradesh',
-    category: 'solar',
-    location: 'Various Locations across UP',
-    description: 'Showcasing our successful solar panel installations across UP. We deliver innovative and high-efficiency solar solutions for homes and businesses, reducing energy costs.',
-    image: 'project-solar-generic',
   },
   {
     id: 'p2',

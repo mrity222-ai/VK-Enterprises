@@ -32,7 +32,10 @@ function useCountUp(end: number, duration: number, start = 0, trigger: boolean) 
   const [count, setCount] = useState(start);
 
   useEffect(() => {
-    if (!trigger) return;
+    if (!trigger) {
+      setCount(start);
+      return;
+    }
 
     let startTime: number | null = null;
     let animationFrameId: number;
@@ -97,21 +100,30 @@ export function AnimatedStats({ stats, className, variant = 'light' }: AnimatedS
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-          // Don't disconnect, so it can re-trigger if needed or simply stay in view
-        }
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setIsInView(true);
+          }
+        });
       },
       { 
-        threshold: 0.05, // Lower threshold for better mobile support
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.01,
+        rootMargin: '100px 0px' 
       }
     );
 
     const currentRef = ref.current;
     if (currentRef) {
       observer.observe(currentRef);
+    }
+
+    // Force trigger if component is already in view (common on initial load)
+    if (currentRef) {
+      const rect = currentRef.getBoundingClientRect();
+      if (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+        setIsInView(true);
+      }
     }
 
     return () => {
